@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get a Quote | KRICHMO (PTY) LTD</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Request a Quote</h1>
+        <p>The fastest and simplest way to get a quote is to send us a message directly.</p>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="container" style="max-width: 800px; text-align: center;">
+        <h2 class="section-title text-center" style="padding-left: 0; text-align: center;">Choose Your Preferred Method.</h2>
+        <p style="margin-bottom: 2rem;">We respond quickly to all enquiries.</p>
+        
+        <div class="quote-methods">
+          <a href="https://wa.me/27838985029?text=Hello%20KRICHMO,%20I%20would%20like%20to%20request%20a%20quote." class="quote-method-btn whatsapp" target="_blank">
+            <i class="fab fa-whatsapp" style="font-size: 1.5rem;"></i> WhatsApp Us
+          </a>
+          <a href="mailto:moitsi.bmk@gmail.com?subject=Quote%20Request" class="quote-method-btn email">
+            <i class="fas fa-envelope" style="font-size: 1.5rem;"></i> Email Us
+          </a>
+        </div>
+
+        <div class="quick-form-card">
+          <h3 style="text-align: center; margin-bottom: 0.5rem;">Or use this quick form</h3>
+          <p style="text-align: center; font-size: 0.9rem; margin-bottom: 1.5rem;">Fill in the details and we'll open WhatsApp with your message ready to send.</p>
+          <form id="quote-form">
+            <div class="form-group">
+              <label for="q-name">Your Name *</label>
+              <input type="text" id="q-name" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="q-phone">Phone Number *</label>
+              <input type="tel" id="q-phone" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="q-details">Brief Project Details *</label>
+              <textarea id="q-details" class="form-control" rows="4" placeholder="e.g., House wiring in Kuruman" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <i class="fab fa-whatsapp"></i> Send via WhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/forms.js"></script>
+</body>
+</html>

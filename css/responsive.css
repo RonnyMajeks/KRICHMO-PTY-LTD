@@ -1,0 +1,52 @@
+@media (max-width: 1024px) {
+  .hero-title { font-size: 3rem; }
+  .about-grid, .services-list-grid, .blog-grid, .contact-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .about-image img, .services-list-image img { height: 400px; }
+  .sectors-grid, .team-grid { grid-template-columns: repeat(2, 1fr); }
+  .footer-grid { grid-template-columns: repeat(2, 1fr); }
+  .quality-grid { grid-template-columns: repeat(2, 1fr); grid-template-rows: auto; }
+  .quality-item:nth-child(2) { grid-row: auto; }
+  .quality-item img { height: 250px; }
+  .services-bullet-list { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+  .hero-title { font-size: 2.2rem; }
+  .section-title { font-size: 1.8rem; }
+  .mobile-menu-toggle { display: block; }
+  .header-phone { display: none; }
+  
+  .main-nav {
+    position: fixed; top: 0; right: -100%;
+    width: 85%; max-width: 320px; height: 100vh;
+    background: var(--color-white);
+    box-shadow: -5px 0 20px rgba(0,0,0,0.15);
+    padding: 100px 2rem 2rem;
+    transition: right 0.3s ease;
+    flex-direction: column; align-items: flex-start; gap: 1.5rem;
+    z-index: 999;
+  }
+  .main-nav.active { right: 0; }
+  .nav-list { flex-direction: column; align-items: flex-start; gap: 1.5rem; width: 100%; }
+  .nav-list a { font-size: 1rem; width: 100%; padding: 0.75rem 0; }
+  .nav-cta { width: 100%; text-align: center; margin-top: 1rem; }
+  
+  .sectors-grid, .projects-grid, .team-grid, .testimonials-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .footer-bottom { flex-direction: column; text-align: center; }
+  .footer-legal { justify-content: center; }
+  .contact-cta-phone { font-size: 2rem; }
+  .cta-banner-inner { flex-direction: column; text-align: center; }
+  .cta-banner h2 { text-align: center; padding-left: 0; }
+  .cta-banner h2::before { display: none; }
+  .section-header { flex-direction: column; align-items: flex-start; }
+  .stats-row { gap: 2rem; }
+  .hero-buttons { flex-direction: column; width: 100%; }
+  .hero-buttons .btn { width: 100%; }
+}
+
+@media (max-width: 480px) {
+  .hero-title { font-size: 1.8rem; }
+  .quality-grid { grid-template-columns: 1fr; }
+  .page-hero h1 { font-size: 2rem; }
+}
